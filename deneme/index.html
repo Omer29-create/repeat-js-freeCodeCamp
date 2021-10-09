@@ -7,6 +7,10 @@
 </head>
 <body>
     <!--<script src="index.js"></script>-->
+    <!--<script src="yeni.js"></script>-->
+    <!--<script src="forEach.js"></script>-->
+    <!--<script src="array.js"></script>-->
+    <script src="orta_seviye.js"></script>
 	<div id="demo">
         <p id="p1">This is a paragraph.</p>
         <p id="p2">This is another paragraph.</p>
@@ -22,8 +26,83 @@
         Repeat: <input type="text" name="num2" id="num2" /><br />
         <input type="submit" value="Submit" />
     </form>
-    <script src="yeni.js"></script>
+    Status: <progress min="0" max="100" value="35"> 
+    </progress>
+    <svg width="1000" height="3000">
+        <circle cx="90" cy="90" r="70" fill="red" />
+     </svg>
+     <svg width="400" height="410">
+        <line x1="10" y1="10" x2="200" y2="100" 
+            style="stroke:#000000; stroke-linecap:round; 
+            stroke-width:20"  />
+    </svg>
+    <svg width="2000" height="500">
+        <polyline style="stroke-linejoin:miter; stroke:black; 
+            stroke-width:12; fill: none;"
+            points="100 100, 150 150, 200 100" />
+    </svg>
+    <svg height="500" width="1000">
+        <ellipse cx="200" cy="100" rx="150" ry="70" style="fill:green" />
+     </svg>
+     <svg width="1000" height="250">
+        <rect width="150" height="150" fill="blue">
+            <animate attributeName="x" from="0" to="500"
+          dur="3s" fill="freeze" repeatCount="2"/> 
+        </rect>
+    </svg>
+    <svg width="500" height="500">
+        <path d="M 0 0 L200 200 L200 0 Z" style="stroke:#000;  fill:none;" />
+    </svg>
+    <canvas id="canvas1" width="400" height="300">
+    </canvas> 
+    <script>
+    //ctx.rotate( (Math.PI / 180) * 18);  //rotate 25 degrees.
+        var canvas = document.getElementById('canvas1');
+        ctx =canvas.getContext('2d');
+        ctx.font="bold 22px Tahoma";
+        ctx.textAlign="start";
+        ctx.fillText("start", 10, 30);
+        ctx.translate(100, 150);
+        ctx.fillText("after translate", 0, 0);
+        ctx.rotate(1);
+        ctx.fillText("after rotate", 0, 0);
+        ctx.scale(1.5, 4);
+        ctx.fillText("after scale", 0,20);
 
+        const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+const x = person;
+x.age = 10;
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+    </script>
+    <form autocomplete="off">
+        <label for="e-mail">Your e-mail address: <!--placeholder="email@example.com" />--></label>
+        <input name="Email" type="text" required />
+        <input type="submit" value="Submit"/>
+    </form>            
+    <input id="car" type="text" list="colors" />
+    <datalist id="colors">
+        <option value="Red">
+        <option value="Green">
+        <option value="Yellow">
+    </datalist>
+    <input id="email" name="email" type="email" placeholder="example@example.com" />
+    <br />
+    <input id="url" name="url" type="url" placeholder="example.com" />
+    <br />
+    <input id="tel" name="tel" type="tel" placeholder="555.555.1211" />
+    <div id="intro">
+        <p class="first">This is a <em> paragraph.</em></p>
+        <p> This is the second paragraph. </p>
+    </div>
+    <p class="first"> This is not in the intro section.</p>
+    <p> The second paragraph is not in the intro section. </p>
 </body>
 </html>
+
 
