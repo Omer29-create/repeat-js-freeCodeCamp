@@ -1,0 +1,27 @@
+body {
+    background:url("http://www.sololearn.com/images/bg2.jpg");
+}
+nav {
+    padding: 50px 0;
+    min-width: 500px; 
+}
+nav ul {
+    background: linear-gradient(150deg, 
+     rgba(243, 87, 160, 0) 0%, 
+     rgba(196, 26, 26, 0.2) 25%, 
+     rgba(27, 86, 175, 0.2) 75%, 
+     rgba(228, 222, 222, 0.877) 100%);
+    box-shadow: 0 0 25px rgba(167, 11, 11, 0.1),
+     inset 0 0 1px rgba(89, 101, 156, 0.6);
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    padding: 10px; 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+ }
