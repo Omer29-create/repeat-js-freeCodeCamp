@@ -49,3 +49,28 @@ function displayCars() {
   cars[1].type + " " + cars[1].year + "<br>" +
   cars[2].type + " " + cars[2].year;
 }
+
+
+// harfe göre siralamasi
+function myFunction() {
+  cars.sort(function(a, b){
+    let x = a.type.toLowerCase();
+    let y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+  displayCars();
+}
+
+
+// forEach ile yazdirma
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
