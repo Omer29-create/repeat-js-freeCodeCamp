@@ -227,3 +227,18 @@ let msec = Date.parse("March 21, 2012");
 const d = new Date(msec);
 document.getElementById("demo").innerHTML = d;
 // Wed Mar 21 2012 00:00:00 GMT+0100 (Central European Standard Time)
+
+
+let text;
+const today = new Date();
+const someday = new Date();
+someday.setFullYear(2100, 0, 14);
+
+if (someday > today) {
+  text = "Today is before January 14, 2100.";
+} else {
+  text = "Today is after January 14, 2100.";
+}
+
+document.getElementById("demo").innerHTML = text;
+// Today is before January 14, 2100.
