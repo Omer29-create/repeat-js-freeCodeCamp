@@ -96,3 +96,15 @@ document.getElementById("demo").innerHTML = over18;
 function myFunction(value, index, array) {
   return value > 18;
 }
+
+
+// reduce
+const numbers = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction);  // 99
+// let sum = numbers.reduce(myFunction, 100);  // 199
+
+document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
