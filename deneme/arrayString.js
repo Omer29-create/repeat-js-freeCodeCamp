@@ -192,3 +192,38 @@ cars.push("Audi");
 
 // Display the Array:
 document.getElementById("demo").innerHTML = cars; // {Toyota, Volvo, BMW, Audi}
+
+
+// new Date()
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+// Tue Oct 12 2021 08:40:46 GMT+0200 (Central European Summer Time)
+
+const d = new Date("April 13, 2014 11:13:00");
+document.getElementById("demo").innerHTML = d;
+// Sun Apr 13 2014 11:13:00 GMT+0200 (Central European Summer Time)
+
+const d = new Date(100000000000);
+document.getElementById("demo").innerHTML = d;
+// Sat Mar 03 1973 10:46:40 GMT+0100 (Central European Standard Time)
+
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+// Tue, 12 Oct 2021 06:53:23 GMT
+
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+// Tue Oct 12 2021
+
+const d = new Date();
+document.getElementById("demo").innerHTML = d.toISOString();
+// 2021-10-12T06:55:03.111Z
+
+const msec = Date.parse("Jan 2, 1970");
+document.getElementById("demo").innerHTML = msec;
+// 82800000  millisecond - 1.1.1970
+
+let msec = Date.parse("March 21, 2012");
+const d = new Date(msec);
+document.getElementById("demo").innerHTML = d;
+// Wed Mar 21 2012 00:00:00 GMT+0100 (Central European Standard Time)
