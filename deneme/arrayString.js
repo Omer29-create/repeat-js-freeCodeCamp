@@ -160,3 +160,22 @@ document.getElementById("demo").innerHTML = text; /* 0
                                                      1 
                                                      2 
                                                      3 */
+
+
+// Object.keys(isim)
+const fruits = {
+  a : "Banana", 
+  b : "Orange", 
+  c : "Apple", 
+  d :"Mango"};
+  const keys = Object.keys(fruits); 
+  
+  let text = [];
+  for (let x of keys) {
+    text += x + "<br>";
+  }
+  
+  document.getElementById("demo").innerHTML = text; /*a
+                                                      b
+                                                      c
+                                                      d */
