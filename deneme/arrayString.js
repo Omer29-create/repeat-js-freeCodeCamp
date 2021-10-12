@@ -119,3 +119,14 @@ document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
 function myFunction(value, index, array) {
   return value > 18;
 }
+
+
+// some
+const numbers = [45, 4, 9, 16, 25];
+let someOver18 = numbers.some(myFunction); // true
+
+document.getElementById("demo").innerHTML = "Varsa true dönecek " + someOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
