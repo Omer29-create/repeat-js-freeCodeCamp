@@ -130,3 +130,14 @@ document.getElementById("demo").innerHTML = "Varsa true dönecek " + someOver18;
 function myFunction(value, index, array) {
   return value > 18;
 }
+
+
+// find
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+document.getElementById("demo").innerHTML = "Function'daki sarti ik saglayan sayi : " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
