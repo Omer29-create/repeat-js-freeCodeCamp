@@ -141,3 +141,8 @@ document.getElementById("demo").innerHTML = "Function'daki sarti ik saglayan say
 function myFunction(value, index, array) {
   return value > 18;
 }
+
+
+// from
+const myArr = Array.from("Mehmet");
+document.getElementById("demo").innerHTML = myArr;  // M,e,h,m,e,t
