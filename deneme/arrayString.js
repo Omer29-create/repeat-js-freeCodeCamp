@@ -85,3 +85,14 @@ document.getElementById("demo").innerHTML = numbers2;
 function myFunction(value, index, array) {
   return value * 2;
 }
+
+
+// filter
+const numbers = [45, 4, 9, 16, 25];
+const over18 = numbers.filter(myFunction);
+
+document.getElementById("demo").innerHTML = over18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
