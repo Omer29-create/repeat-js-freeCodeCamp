@@ -108,3 +108,14 @@ document.getElementById("demo").innerHTML = "The sum is " + sum;
 function myFunction(total, value, index, array) {
   return total + value;
 }
+
+
+// every
+const numbers = [45, 4, 9, 16, 25];
+let allOver18 = numbers.every(myFunction);
+
+document.getElementById("demo").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
