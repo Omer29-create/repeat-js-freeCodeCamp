@@ -146,3 +146,17 @@ function myFunction(value, index, array) {
 // from
 const myArr = Array.from("Mehmet");
 document.getElementById("demo").innerHTML = myArr;  // M,e,h,m,e,t
+
+
+// keys()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
+
+let text = "";    
+for (let x of keys) {
+  text += x + "<br>";
+}
+document.getElementById("demo").innerHTML = text; /* 0 
+                                                     1 
+                                                     2 
+                                                     3 */
