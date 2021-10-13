@@ -8,6 +8,7 @@ for (; i < len; ) {
 }
 
 
+// 2. Yol
 const person = {fname:"John", lname:"Doe", age:25}; 
 
 let txt = "";
