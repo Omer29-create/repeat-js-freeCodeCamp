@@ -55,6 +55,7 @@ for (;cars[i];) {
   document.getElementById("demo").innerHTML = text;
   
   
+// break
   const cars = ["BMW", "Volvo", "Saab", "Ford"];
 let text = "";
 
