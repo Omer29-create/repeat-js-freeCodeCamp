@@ -46,6 +46,7 @@ for (;cars[i];) {
   }
 
 
+// continue : 3'ü atliyor : 12456789
   let text = "";
   for (let i = 0; i < 10; i++) {
     if (i === 3) { continue; }
