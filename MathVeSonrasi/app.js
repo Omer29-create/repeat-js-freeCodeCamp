@@ -1,3 +1,4 @@
+// 1. Yol
 let i = 0;
 let len = cars.length;
 let text = "";
