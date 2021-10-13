@@ -30,10 +30,11 @@ function myFunction(value, index, array) {
 }
 
 
+
 const cars = ["BMW", "Volvo", "Saab", "Ford"];
 let i = 0;
 let text = "";
-
+// 4. Yol
 while (cars[i]) {
   text += cars[i];
   i++;
