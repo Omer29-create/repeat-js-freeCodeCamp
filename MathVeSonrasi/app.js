@@ -39,7 +39,7 @@ while (cars[i]) {
   text += cars[i];
   i++;
 }
-
+// 5. Yol
 for (;cars[i];) {
     text += cars[i];
     i++;
