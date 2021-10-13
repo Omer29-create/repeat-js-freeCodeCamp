@@ -19,6 +19,7 @@ for (let x in person) {
 document.getElementById("demo").innerHTML = txt;
 
 
+// 3. Yol
 const numbers = [45, 4, 9, 16, 25];
 
 let txt = "";
