@@ -57,7 +57,7 @@ var person = {
   document.getElementById("demo").innerHTML = txt; /*John Doe EN*/
 
 
-  // Create an Object:
+// Create an Object:
 var person = {
     firstName: "John",
     lastName : "Doe",
