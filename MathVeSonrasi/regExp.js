@@ -14,7 +14,7 @@ function myFunction() {
       if(x < 5)  throw "too low";
       if(x > 10)   throw "too high";
     }
-    catch(err) {
+    catch (err) {
       message.innerHTML = "Input is " + err;
     }
     finally {
