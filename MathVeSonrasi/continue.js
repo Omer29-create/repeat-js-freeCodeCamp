@@ -52,3 +52,8 @@ class Car {
 const obj = JSON.parse(text); // Js'e cevirir
 document.getElementById("demo").innerHTML =
 obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+
+let x = 15 * 5;
+debugger;  // Burada duracak ve 3. satira gitmeyecek
+document.getElementById("demo").innerHTML = x; 
