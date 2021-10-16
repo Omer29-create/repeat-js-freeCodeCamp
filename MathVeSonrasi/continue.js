@@ -108,3 +108,8 @@ function myFunction(x, y) {
   
   let x = 0;
 document.getElementById("demo").innerHTML = Boolean(x = 10); // true
+
+
+let x = 10;
+let y = "10";
+document.getElementById("demo").innerHTML = Boolean(x == y); // true
