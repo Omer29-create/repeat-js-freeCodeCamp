@@ -103,7 +103,7 @@ for (let x of language) {
   text += x + " ";
 }
 
-document.getElementById("demo").innerHTML = text;
+document.getElementById("demo").innerHTML = text; // J a v a s c r i p t
 
 
 const myPromise = new Promise(function(myResolve, myReject) {
