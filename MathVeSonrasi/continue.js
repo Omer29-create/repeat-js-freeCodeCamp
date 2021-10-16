@@ -142,3 +142,11 @@ function myFunction(a) {
   let power = 10;
   return a * power;
 }
+
+
+const person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length;  // undefined 0  Cünkü atamalar olmadi
