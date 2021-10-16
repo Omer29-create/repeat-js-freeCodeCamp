@@ -130,3 +130,8 @@ switch(x) {
 let y = 10
 y += "5";
 document.getElementById("demo").innerHTML = y; //105
+
+
+// Satir asagi inmek icin. Bu arada + isaretiyle de oluyor. Dikkat edilmesi gereken sonrasinda bosluk vs olmamali
+let x = "Hello \
+World!";  
