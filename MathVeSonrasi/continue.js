@@ -135,3 +135,10 @@ document.getElementById("demo").innerHTML = y; //105
 // Satir asagi inmek icin. Bu arada + isaretiyle de oluyor. Dikkat edilmesi gereken sonrasinda bosluk vs olmamali
 let x = "Hello \
 World!";  
+
+
+document.getElementById("demo").innerHTML = myFunction(55);
+function myFunction(a) {
+  let power = 10;
+  return a * power;
+}
