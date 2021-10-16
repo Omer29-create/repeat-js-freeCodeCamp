@@ -85,3 +85,13 @@ add();
 
 // The counter should now be 3
 document.getElementById("demo").innerHTML = "The counter is: " + counter; // The counter is: 3
+
+
+// Nested Function
+document.getElementById("demo").innerHTML = add();
+function add() {
+  let counter = 0;
+  function plus() {counter += 1;}
+  plus();  
+  return counter; 
+}
