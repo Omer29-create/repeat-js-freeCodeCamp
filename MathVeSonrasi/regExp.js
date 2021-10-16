@@ -23,7 +23,7 @@ function myFunction() {
   }
 
 
-  let num = 1;
+let num = 1;
 try {
   num.toUpperCase();
 }
