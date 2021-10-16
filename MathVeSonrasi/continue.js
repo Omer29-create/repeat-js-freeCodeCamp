@@ -84,3 +84,20 @@ let x = 5 - "x";     // x.valueOf() is NaN, typeof x is a number
 0 === "";       // false
 1 === "1";      // false
 1 === true;     // false
+
+
+function myFunction(x, y) {
+    if (y === undefined) {
+      y = 3;
+    }  
+    return x * y;
+  }
+  document.getElementById("demo").innerHTML = myFunction(4); // 12
+
+  function myFunction(x, y) {
+    if (y === undefined) {
+      y = 3;
+    }  
+    return x * y;
+  }
+  document.getElementById("demo").innerHTML = myFunction(4, 7); // 28
