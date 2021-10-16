@@ -150,3 +150,11 @@ person["lastName"] = "Doe";
 person["age"] = 46; 
 document.getElementById("demo").innerHTML =
 person[0] + " " + person.length;  // undefined 0  Cünkü atamalar olmadi
+
+
+const person = [];
+person[0] = {a : first};
+person[1] = "Doe";
+person[2] = 46; 
+document.getElementById("demo").innerHTML =
+person[0] + " " + person.length;  // John 3
