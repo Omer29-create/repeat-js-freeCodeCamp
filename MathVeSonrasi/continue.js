@@ -162,3 +162,7 @@ person[0] + " " + person.length;  // John 3
 
 document.getElementById("demo").innerHTML 
 = typeof myObj !== null && myObj !== "undefined"; // calismadi
+
+
+document.getElementById("demo").innerHTML 
+= typeof myObj !== "undefined" && myObj !== null; // false
