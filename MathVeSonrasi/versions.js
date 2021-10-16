@@ -54,7 +54,7 @@ var person = {
   for (var x in person) {
     txt += person[x] + "<br>";
   }
-  document.getElementById("demo").innerHTML = txt;/*John Doe EN*/
+  document.getElementById("demo").innerHTML = txt; /*John Doe EN*/
 
 
   // Create an Object:
