@@ -55,3 +55,17 @@ while (true) {
 }
 
 document.getElementById("demo").innerHTML = text;
+
+
+// Create Variables
+const a = "a";
+const b = "b";
+const c = "c";
+
+// Create a Set
+const letters = new Set();
+
+// Add Variables to the Set
+letters.add(a);
+letters.add(b);
+letters.add(c);
