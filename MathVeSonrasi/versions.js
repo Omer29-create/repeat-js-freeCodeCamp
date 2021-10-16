@@ -111,7 +111,7 @@ const myPromise = new Promise(function(myResolve, myReject) {
   });
   
   myPromise.then(function(value) {
-    document.getElementById("demo").innerHTML = value;
+    document.getElementById("demo").innerHTML = value;  // 3 sn sonra yazi gözükecek
   });
 
 
