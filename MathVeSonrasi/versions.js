@@ -125,7 +125,7 @@ const myPromise = new Promise(function(myResolve, myReject) {
   let id = Symbol('id');
   person[id] = 140353;
   
-  document.getElementById("demo").innerHTML = person[id] + " " + person.id; //140353 undefined
+  document.getElementById("demo").innerHTML = person[id] + " " + person.id;  //140353 undefined
 
 
   function sum(...args) {
