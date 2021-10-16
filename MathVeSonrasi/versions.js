@@ -74,7 +74,7 @@ var person = {
   document.getElementById("demo").innerHTML = person.language; // EN
 
 
-  // Create object with an existing object as prototype
+ // Create object with an existing object as prototype
 Object.create(parent, donor)
 
 // Adding or changing an object property
