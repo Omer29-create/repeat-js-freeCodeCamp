@@ -40,3 +40,16 @@ document.getElementById("demo").innerHTML = Car.hello();
 // But NOT on a Car Object:
 // document.getElementById("demo").innerHTML = myCar.hello();
 // this will raise an error.
+
+
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+  static hello(x) {
+    return "Hello " + x.name;
+  }
+}
+
+let myCar = new Car("Ford");
+document.getElementById("demo").innerHTML = Car.hello(myCar);  // Hello Ford
