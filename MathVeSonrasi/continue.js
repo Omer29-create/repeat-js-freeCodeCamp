@@ -66,3 +66,12 @@ const x4 = {};           // new object
 const x5 = [];           // new array object
 const x6 = /()/;         // new regexp object
 const x7 = function(){}; // new function object
+
+
+let x = 5 + 7;       // x.valueOf() is 12,  typeof x is a number
+let x = 5 + "7";     // x.valueOf() is 57,  typeof x is a string
+let x = "5" + 7;     // x.valueOf() is 57,  typeof x is a string
+let x = 5 - 7;       // x.valueOf() is -2,  typeof x is a number
+let x = 5 - "7";     // x.valueOf() is -2,  typeof x is a number
+let x = "5" - 7;     // x.valueOf() is -2,  typeof x is a number
+let x = 5 - "x";     // x.valueOf() is NaN, typeof x is a number
