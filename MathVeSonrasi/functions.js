@@ -68,3 +68,20 @@ person.fullName.call(person1, "Oslo", "Norway"); // Oslo Norway
 person.fullName.apply(person1); // John Doe
 /*The call() method takes arguments separately.
 The apply() method takes arguments as an array. */
+
+
+// Initiate counter
+let counter = 0;
+
+// Function to increment counter
+function add() {
+  counter += 1;
+}
+
+// Call add() 3 times
+add();
+add();
+add();
+
+// The counter should now be 3
+document.getElementById("demo").innerHTML = "The counter is: " + counter; // The counter is: 3
