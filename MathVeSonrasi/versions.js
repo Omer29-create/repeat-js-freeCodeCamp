@@ -143,7 +143,7 @@ const myPromise = new Promise(function(myResolve, myReject) {
 
   let text = "";
   for (let [meyve, fiyat] of Object.entries(fruits)) {
-    text += meyve + ": " + fiyat + "<br>";
+    text += meyve + " : " + fiyat + "<br>";
   }
   
   document.getElementById("demo").innerHTML = text;
