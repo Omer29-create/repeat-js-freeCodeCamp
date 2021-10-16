@@ -19,3 +19,9 @@ function findMax() {
   return max;
 } 
 document.getElementById("demo").innerHTML = findMax(4, 5, 6);  // 6
+
+
+function myFunction(a, b) {
+  return a * b;
+}
+window.myFunction(10, 2);    // Will also return 20 window yazilmasa da olur
