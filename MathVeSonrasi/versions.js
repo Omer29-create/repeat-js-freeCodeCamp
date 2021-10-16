@@ -136,7 +136,7 @@ const myPromise = new Promise(function(myResolve, myReject) {
   
   let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
   
-  document.getElementById("demo").innerHTML = x;  // 326
+  document.getElementById("demo").innerHTML = x; // 326
 
 
   const fruits = {Bananas:300, Oranges:200, Apples:500}; 
