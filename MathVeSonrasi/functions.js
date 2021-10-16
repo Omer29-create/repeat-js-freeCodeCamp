@@ -64,3 +64,7 @@ const person2 = {
 // This will return "John Doe":
 person.fullName.call(person1); // John Doe
 person.fullName.call(person1, "Oslo", "Norway"); // Oslo Norway
+
+person.fullName.apply(person1); // John Doe
+/*The call() method takes arguments separately.
+The apply() method takes arguments as an array. */
