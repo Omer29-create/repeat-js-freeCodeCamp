@@ -101,3 +101,10 @@ function myFunction(x, y) {
     return x * y;
   }
   document.getElementById("demo").innerHTML = myFunction(4, 7); // 28
+
+
+ let x = 0;
+  document.getElementById("demo").innerHTML = Boolean(x == 10); // false
+  
+  let x = 0;
+document.getElementById("demo").innerHTML = Boolean(x = 10); // true
