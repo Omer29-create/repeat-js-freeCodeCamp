@@ -1,3 +1,13 @@
+let x1 = "";             // new primitive string
+let x2 = 0;              // new primitive number
+let x3 = false;          // new primitive boolean
+
+const x4 = {};           // new Object object
+const x5 = [];           // new Array object
+const x6 = /()/          // new RegExp object
+const x7 = function(){}; // new function
+
+
 // Home Made Iterable
 function myNumbers() {
   let n = 0;
