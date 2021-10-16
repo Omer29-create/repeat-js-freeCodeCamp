@@ -62,4 +62,5 @@ const person2 = {
 }
 
 // This will return "John Doe":
-person.fullName.call(person1);
+person.fullName.call(person1); // John Doe
+person.fullName.call(person1, "Oslo", "Norway"); // Oslo Norway
