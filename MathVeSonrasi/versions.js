@@ -3,3 +3,12 @@ function myFunction() {
     var x = document.getElementById("demo");
     x.innerHTML = Array.isArray(fruits);
   }  // true
+
+
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value) {
+  txt = txt + value + "<br>";
+}
