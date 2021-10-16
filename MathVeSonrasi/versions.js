@@ -156,7 +156,7 @@ const myPromise = new Promise(function(myResolve, myReject) {
     eyeColor  : "blue"
   };
   document.getElementById("demo").innerHTML = Object.values(person);
-  // firstName,lastName,age,eyeColor
+  // firstName, lastName, age, eyeColor
 
 
   async function myDisplay() {
