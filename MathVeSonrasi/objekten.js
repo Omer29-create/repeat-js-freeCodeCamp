@@ -73,3 +73,14 @@ letters.add(c);
 
 typeof letters;      // Returns object
 letters instanceof Set;  // Returns true
+
+
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  language : "EN"
+};
+
+// Add a property
+Object.defineProperty(person, "year", {value:"2008"});
