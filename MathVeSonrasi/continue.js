@@ -42,3 +42,13 @@ class Car {
   let myCar = new Car("Ford", 2014);
   document.getElementById("demo").innerHTML =
   "My car is " + myCar.age() + " years old.";
+
+
+  let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+const obj = JSON.parse(text); // Js'e cevirir
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
