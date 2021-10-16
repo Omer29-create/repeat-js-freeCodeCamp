@@ -158,3 +158,7 @@ person[1] = "Doe";
 person[2] = 46; 
 document.getElementById("demo").innerHTML =
 person[0] + " " + person.length;  // John 3
+
+
+document.getElementById("demo").innerHTML 
+= typeof myObj !== null && myObj !== "undefined"; // calismadi
