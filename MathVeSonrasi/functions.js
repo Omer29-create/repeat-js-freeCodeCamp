@@ -25,3 +25,10 @@ function myFunction(a, b) {
   return a * b;
 }
 window.myFunction(10, 2);    // Will also return 20 window yazilmasa da olur
+
+
+let x = myFunction();
+function myFunction() {
+  return this;
+}
+document.getElementById("demo").innerHTML = x;  // [object Window]
