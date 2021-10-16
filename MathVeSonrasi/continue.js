@@ -75,3 +75,12 @@ let x = 5 - 7;       // x.valueOf() is -2,  typeof x is a number
 let x = 5 - "7";     // x.valueOf() is -2,  typeof x is a number
 let x = "5" - 7;     // x.valueOf() is -2,  typeof x is a number
 let x = 5 - "x";     // x.valueOf() is NaN, typeof x is a number
+
+
+0 == "";        // true
+1 == "1";       // true
+1 == true;      // true
+
+0 === "";       // false
+1 === "1";      // false
+1 === true;     // false
