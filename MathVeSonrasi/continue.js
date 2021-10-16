@@ -113,3 +113,15 @@ document.getElementById("demo").innerHTML = Boolean(x = 10); // true
 let x = 10;
 let y = "10";
 document.getElementById("demo").innerHTML = Boolean(x == y); // true
+
+
+let x = 10;
+switch(x) {
+  case 10: document.getElementById("demo").innerHTML = "Hello";
+} // Hello
+
+
+let x = 10;
+switch(x) {
+  case "10": document.getElementById("demo").innerHTML = "Hello";
+}  // Calismiyor
