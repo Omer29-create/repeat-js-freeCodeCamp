@@ -125,3 +125,8 @@ let x = 10;
 switch(x) {
   case "10": document.getElementById("demo").innerHTML = "Hello";
 }  // Calismiyor
+
+
+let y = 10
+y += "5";
+document.getElementById("demo").innerHTML = y; //105
