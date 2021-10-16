@@ -69,3 +69,7 @@ const letters = new Set();
 letters.add(a);
 letters.add(b);
 letters.add(c);
+
+
+typeof letters;      // Returns object
+letters instanceof Set;  // Returns true
