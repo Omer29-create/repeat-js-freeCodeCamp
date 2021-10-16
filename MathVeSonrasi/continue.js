@@ -29,8 +29,16 @@ class Car {
       this.name = name;
       this.year = year;
     }
+    age() {
+      let date = new Date();
+      return date.getFullYear() - this.year;
+    }
   }
   
   const myCar = new Car("Ford", 2014);
   document.getElementById("demo").innerHTML =
   myCar.name + " " + myCar.year; // Ford 2014
+  
+  let myCar = new Car("Ford", 2014);
+  document.getElementById("demo").innerHTML =
+  "My car is " + myCar.age() + " years old.";
