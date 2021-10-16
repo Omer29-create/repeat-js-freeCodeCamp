@@ -32,7 +32,7 @@ catch(err) {
 }
 
 
-  myFunction();
+myFunction();
 // code here can use carName as a global variable
 document.getElementById("demo").innerHTML = "I can display " + carName;
 
