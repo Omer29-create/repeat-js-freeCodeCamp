@@ -26,3 +26,32 @@ n.next(); // 20
 n.next(); // 30
 
 document.getElementById("demo").innerHTML = n.next().value;
+
+
+// Create an Object
+myNumbers = {};
+
+// Make it Iterable
+myNumbers[Symbol.iterator] = function() {
+  let n = 0;
+  done = false;
+  return {
+    next() {
+      n += 10;
+      if (n == 100) {done = true}
+      return {value:n, done:done};
+    }
+  };
+}
+
+// Create an Iterator
+let iterator = myNumbers[Symbol.iterator]();
+
+let text = ""
+while (true) {
+  const result = iterator.next();
+  if (result.done) break;
+  text += result.value +"<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
