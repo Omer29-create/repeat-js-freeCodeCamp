@@ -84,3 +84,9 @@ const person = {
 
 // Add a property
 Object.defineProperty(person, "year", {value:"2008"});
+
+
+// Define a getter
+Object.defineProperty(person, "fullName", {
+  get: function () {return this.firstName + " " + this.lastName;}
+});
