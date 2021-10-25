@@ -17,6 +17,7 @@ hello = () => {
   document.getElementById("demo").innerHTML += this;
 }
 
+
 //The window object calls the function:
 window.addEventListener("load", hello);
 
