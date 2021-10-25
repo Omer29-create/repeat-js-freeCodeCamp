@@ -11,7 +11,6 @@ const person1 = {
   let x = person1.fullName.call(person2); 
   document.getElementById("demo").innerHTML = x;
 
-
 var hello;
 
 hello = () => {
