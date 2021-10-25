@@ -3,6 +3,7 @@ const person1 = {
       return this.firstName + " " + this.lastName;
     }
   }
+
   const person2 = {
     firstName:"John",
     lastName: "Doe",
