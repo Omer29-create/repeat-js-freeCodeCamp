@@ -18,6 +18,7 @@ hello = () => {
 }
 
 
+
 //The window object calls the function:
 window.addEventListener("load", hello);
 
